@@ -1,0 +1,6 @@
+osm_carto README
+================
+
+osm_carto is my attempt at making an OpenStreetMap stylesheet for mapnik using
+the carto utility.
+
