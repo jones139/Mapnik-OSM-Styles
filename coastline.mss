@@ -1,4 +1,3 @@
-
 #coast-poly {
   polygon-fill: #aaffaa;
   line-color: #ccc;

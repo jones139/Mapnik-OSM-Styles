@@ -1,7 +1,3 @@
-Map {
-  background-color: #aaaaff;
-}
-
 /* by default all highways are drawn as thin black lines to help find bugs.
    if this style is set correctly, and the map data is correct you should
    not see any of these because they will be overwritten by one of the
@@ -103,9 +99,10 @@ Map {
 }
 
 
-
+/*
 #coast-poly {
   polygon-fill: #aaffaa;
   line-color: #ccc;
   line-width: 0.5;
 }
+*/
