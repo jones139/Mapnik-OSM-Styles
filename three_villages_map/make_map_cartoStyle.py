@@ -8,7 +8,8 @@ import sys, os
 if __name__ == "__main__":
 
     #mapfile = "layerdefs2.mml"
-    mapfile = "osm_carto.mml"
+    #mapfile = "osm_carto.mml"
+    mapfile = "hartlepool.mml"
     xmlmapfile = "osm_carto.xml"
     map_uri = "image.png"
 
@@ -20,19 +21,24 @@ if __name__ == "__main__":
     #ll = (-6.5, 49.5, 2.1, 59)
     #ll = (-1.2,54.65,-1.17,54.7)
     # kefalonia
-    ll = (20.33,38.03,20.82,38.50)
+    #ll = (20.33,38.03,20.82,38.50)
     # kefalonia_SE
-    ll = (20.575,38.03,20.82,38.265)
+    #ll = (20.575,38.03,20.82,38.265)
     # kefalonia_S
     #ll = (20.60,38.13,20.70,38.24)
 
     # kefalonia_katelios-skala
-    ll = (20.75,38.05,20.8,38.1)
+    #ll = (20.75,38.05,20.8,38.1)
 
     # kefalonia_Argostoli
     #ll = (20.47,38.16,20.5,38.2)
 
     #ll = (-180.,-180.,180.,180.)
+
+    # Hartlepool
+    #ll = (-1.307, 54.608, -1.111, 54.729)
+    # Three Villages
+    ll = (-1.311, 54.633, -1.237, 54.689)
     #---------------------------------------------------
 
     print "Making Mapnik2 compatible style from standard OSM stylesheets"
@@ -42,12 +48,16 @@ if __name__ == "__main__":
 
 
     # landscape
-    imgx_cm = 40.0
-    imgy_cm = 28.0
+    #imgx_cm = 40.0
+    #imgy_cm = 28.0
 
     # A3 Portrait
-    #imgx_cm = 28.0
-    #imgy_cm = 40.0
+    imgx_cm = 28.0
+    imgy_cm = 40.0
+
+    # A4 Portrait
+    imgx_cm = 14.0
+    imgy_cm = 20.0
 
     img_dpi = 300.0
 
