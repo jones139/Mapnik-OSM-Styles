@@ -1,0 +1,267 @@
+{
+"_center":{"lat":36.870832154494,"lon":-113.79638671427,"zoom":5},
+"_format":"png",
+"srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+
+"Stylesheet":["style.mss",
+	"areas.mss",
+	"roads.mss",
+	"labels.mss", 
+	"natural.mss",
+	"contours.mss",
+	"POIs.mss",
+	"routes.mss"],
+
+
+"Layer":[
+  {"id":"coastline",
+   "name":"coastline",
+   "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over",
+   "class":"",
+   "geometry":"polygon",
+   "Datasource":{"file":"/home/graham/OSM/data/mapdata/world_boundaries/processed_p.shp","type":"shape"}},
+
+  {"id":"grid",
+   "name":"grid",
+   "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over",
+   "class":"",
+   "geometry":"line",
+   "Datasource":{"file":"./grid.shp","type":"shape"}},
+
+
+ {"id":"landuse",
+  "name":"landuse",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"area",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,landuse,name from planet_osm_polygon where landuse is not null) as landuse"
+                }
+  },
+
+ {"id":"leisure-poly",
+  "name":"leisure-poly",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"area",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,leisure,name from planet_osm_polygon where leisure is not null) as leisure"
+                }
+  },
+
+ {"id":"natural-poly",
+  "name":"natural-poly",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"area",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,\"natural\",name from planet_osm_polygon where \"natural\" is not null) as \"natural\""
+                }
+  },
+
+ {"id":"natural-line",
+  "name":"natural-line",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,\"natural\",name from planet_osm_point where \"natural\" is not null) as \"natural\""
+                }
+  },
+
+
+ {"id":"contours",
+  "name":"contours",
+  "srs":"+proj=latlong +datum=WGS84",
+  "class":"",
+  "geometry":"line",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,height from contours where height::integer % 10 = 0) as contours"
+                }
+  },
+
+ {"id":"amenity-poly",
+  "name":"amenity-poly",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"area",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,amenity,name from planet_osm_polygon where amenity is not null) as amenity"
+                }
+  },
+
+
+ {"id":"building-poly",
+  "name":"building-poly",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"area",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,building,name from planet_osm_polygon where building is not null) as building"
+                }
+  },
+
+
+
+
+ {"id":"highways",
+  "name":"highways",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"line",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,planet_osm_line.highway,name,ref,priority from planet_osm_line join highway_priorities on (planet_osm_line.highway=highway_priorities.highway) where planet_osm_line.highway is not null order by priority desc) as highways"
+                }
+  },
+
+
+ {"id":"places",
+  "name":"places",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,place,name from planet_osm_point where place is not null) as places"
+                }
+  },
+
+ {"id":"aeroway-point",
+  "name":"aeroway-point",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,aeroway,name from planet_osm_point where aeroway is not null) as aeroway"
+                }
+  },
+
+ {"id":"amenity-point",
+  "name":"amenity-point",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,amenity,name from planet_osm_point where amenity is not null) as amenity"
+                }
+  },
+
+ {"id":"historic-point",
+  "name":"historic-point",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,historic,name from planet_osm_point where historic is not null) as historic"
+                }
+  },
+
+ {"id":"shop-point",
+  "name":"shop-point",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,shop,name from planet_osm_point where shop is not null) as shop"
+                }
+  },
+
+ {"id":"routes",
+  "name":"routes",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"line",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,route,name,ref from planet_osm_line where route is not null) as routes"
+                }
+  }
+
+
+
+
+]
+
+}
