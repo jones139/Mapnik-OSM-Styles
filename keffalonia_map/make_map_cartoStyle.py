@@ -7,8 +7,8 @@ import sys, os
 
 if __name__ == "__main__":
 
-    mapfile = "layerdefs2.mml"
-    #mapfile = "osm_carto.mml"
+    #mapfile = "layerdefs2.mml"
+    mapfile = "osm_carto.mml"
     xmlmapfile = "osm_carto.xml"
     map_uri = "image.png"
 
@@ -22,12 +22,15 @@ if __name__ == "__main__":
     # kefalonia
     ll = (20.33,38.03,20.82,38.50)
     # kefalonia_SE
-    #ll = (20.575,38.03,20.82,38.265)
+    ll = (20.575,38.03,20.82,38.265)
     # kefalonia_S
-    ll = (20.60,38.13,20.70,38.24)
+    #ll = (20.60,38.13,20.70,38.24)
+
+    # kefalonia_katelios-skala
+    ll = (20.75,38.05,20.8,38.1)
 
     # kefalonia_Argostoli
-    ll = (20.47,38.16,20.5,38.2)
+    #ll = (20.47,38.16,20.5,38.2)
 
     #ll = (-180.,-180.,180.,180.)
     #---------------------------------------------------
@@ -43,8 +46,8 @@ if __name__ == "__main__":
     imgy_cm = 28.0
 
     # A3 Portrait
-    imgx_cm = 28.0
-    imgy_cm = 40.0
+    #imgx_cm = 28.0
+    #imgy_cm = 40.0
 
     img_dpi = 300.0
 
