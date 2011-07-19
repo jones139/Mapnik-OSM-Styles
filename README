@@ -1,6 +1,26 @@
-osm_carto README
-================
+Mapnik_OSM_Styles README
+========================
 
-osm_carto is my attempt at making an OpenStreetMap stylesheet for mapnik using
-the carto utility.
+Mapnik_OSM_Styles is a collection of mapnik stylesheets and utilities I have 
+used for generating maps from OpenStreetMap Data.
+
+They generally use the carto styling language, rather than generating mapnik
+xml directly, as this produces clearer styles for ease of maintenance.
+
+I am still learning, so would appreciate any comments on how to do this
+more elegantly!
+
+Have a look at the README in the three_villages_map directory to get started.
+
+The directories in this repository are:
+contours - scripts to create contour lines in a postgresql database, based
+on SRTM data, so they can be plotted on a map.
+
+keffalonia_map - a simple rendering of a map with contours and tourist points 
+	       of interest that I developed for our holidays in kefalonia.
+
+three_villages_map - simple rendering with contours and hiking routes
+		   highlighted.
+
+test_case - tests!
 
