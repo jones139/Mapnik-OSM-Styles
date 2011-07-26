@@ -5,6 +5,7 @@
 
 "Stylesheet":["style.mss",
 	"areas.mss",
+	"waterway.mss",
 	"roads.mss",
 	"labels.mss", 
 	"natural.mss",
@@ -41,7 +42,7 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,landuse,name from planet_osm_polygon where landuse is not null) as landuse"
+	       "table":"(select way,landuse,\"natural\",name from planet_osm_polygon where (landuse is not null or \"natural\" is not null)) as landuse"
                 }
   },
 
@@ -81,7 +82,7 @@
   "name":"natural-line",
   "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
   "class":"",
-  "geometry":"point",
+  "geometry":"line",
   "Datasource": {
                "type":"postgis",
 	       "dbname":"mapnik",
@@ -89,7 +90,23 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,\"natural\",name from planet_osm_point where \"natural\" is not null) as \"natural\""
+	       "table":"(select way,\"natural\",name from planet_osm_line where \"natural\" is not null) as \"natural\""
+                }
+  },
+
+ {"id":"waterway-line",
+  "name":"waterway-line",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "class":"",
+  "geometry":"line",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"mapnik",
+	       "user":"www",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,waterway,name from planet_osm_line where waterway is not null) as waterway"
                 }
   },
 

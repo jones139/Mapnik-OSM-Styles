@@ -1,3 +1,5 @@
+@water: #1010f0;
+
 #natural-line {
    line-color:#00ff00;
    line-width:1;
@@ -9,24 +11,22 @@
    line-width:4;
    }
 
-
-   [natural="peak"]
+   [natural="stream"],
+   [natural="river"],
+   [natural="drain"],
    {
-    shield-file: url('symbols/poi_peak.p.32.png');
-    shield-name:"[name]";
-    shield-face-name:@serif;
-    shield-text-dy:32;
-    /*shield-allow-overlap:true;
-    shield-halo-radius:1;
-    shield-halo-fill:rgba(255,255,255,0.75);*/
-
+     line-color:#0000ff;
+     line-width:3
    }
-
 }
 
 #natural-poly {
    [natural="beach"]
    {
       polygon-fill: #ffffa0;
+   }
+   [natural="water"]
+   {
+      polygon-fill: #0a0aff;
    }
 }

@@ -1,4 +1,6 @@
 
+polygon-opacity:0.5;
+
 #landuse {
    [landuse="residential"]
    {
@@ -8,9 +10,14 @@
    {
       polygon-fill: #a0a0a0;
    }
-   [landuse="forest"]
+   [landuse="forest"],
+   [natural="wood"]
    {
       polygon-fill: #a0d0a0;
+   }
+   [landuse="farmyard"]
+   {
+      polygon-fill: #80d080;
    }
 }
 
@@ -22,7 +29,7 @@
 }
 
 #building-poly {
-   polygon-fill: #101010;
+   polygon-fill: #404040;
     /*text-placement:line;*/
     /*text-face-name:@serif;
     text-name:"[name]";
