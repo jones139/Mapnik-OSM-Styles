@@ -1,0 +1,46 @@
+three_villages_map
+==================
+
+About
+-----
+This directory contains the map style I used for creating the 'Three Villages
+Native Tree Walk' route map (http://wiki.openstreetmap.org/wiki/Three_Villages_Native_Tree_Walk).
+The features of the style are:
+  - It uses the carto 'css' style pre-processor, so you need carto installed
+      as well as mapnik2.  
+      Install mapnik 2 using:
+      	      	  cd ~
+		  svn co http://svn.mapnik.org/trunk mapnik2
+		  cd mapnik2
+		  ./configure
+		  make
+		  sudo make install
+      I use the version of carto supplied with
+      tilemill.   Download tilemill using:
+      		  cd ~
+      		  git cone https://github.com/mapbox/tilemill.git
+		  cd tilemill
+		  ./ndistro
+		  ln -s ~/tilemill/bin/carto /usr/bin/carto
+  - It uses the world_boundaries shapefiles for coastlines 
+    (hard coded to /home/graham/OSM/data/mapdata/world_boundaries/
+    	  processed_p.shp) in hartlepool.mml.
+	  This can be downloaded from 
+	       http://tile.openstreetmap.org/processed_p.tar.bz2.
+  - It includes contour lines based on srtm data, which is imported into
+       the postgresql database.  Download the appropriate data tile from
+       http://dds.cr.usgs.gov/srtm/version2_1/SRTM3.
+       Import it into the database by running ./import_srtm.sh.
+  - All hiking routes are rendered the same - if you want to use this to
+       identify a particular one, you will have to add a filter on the osm_id
+       (use the negative of the relation id of the route you want to render.
+  - The map is rendered by executing ./make_map_cartoStyle.py.  This converts
+       the carto styles (.mml and .mss) int a mapnik xml style file, and
+       renders it.
+
+
+Credits
+=======
+The style files CC-by-SA Graham Jones.
+Map data CC-by-SA Openstreetmap Contributors
+Map icons CC-0 from SJJB Management (http://sjjb.co.uk/mapicons).

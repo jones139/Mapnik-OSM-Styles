@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map background-color="#c0e0f8" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<FontSet name="fontset-0">
+  <Font face-name="Arial Regular"/>
+  <Font face-name="Liberation Sans Regular"/>
+  <Font face-name="DejaVu Sans Book"/>
+</FontSet>
+<FontSet name="fontset-1">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-2">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-3">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-4">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-5">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-6">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-7">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-8">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-9">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-10">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-11">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-12">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-13">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-14">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-15">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-16">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-17">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-18">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-19">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-20">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-21">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-22">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-23">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-24">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-25">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-26">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-27">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-28">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-29">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<FontSet name="fontset-30">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<Style name="coastline-fill" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#e0e0c0" gamma="0.75" />
+  </Rule>
+</Style>
+<Style name="coastline-outline" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#88ccee" stroke-width="1.6" />
+  </Rule>
+</Style>
+<Layer
+      name="coastline"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <StyleName>coastline-outline</StyleName>
+    <StyleName>coastline-fill</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/graham/OSM/data/mapdata/world_boundaries/processed_p.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="grid" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#eeeeee" stroke-width="1" />
+  </Rule>
+</Style>
+<Layer
+      name="grid"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+    <StyleName>grid</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/graham/OSM/data/Mapnik-OSM-Styles/weardale_way/grid.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="landuse" filter-mode="first">
+  <Rule>
+    <Filter>([landuse] = 'farmyard')</Filter>
+    <PolygonSymbolizer fill="#80d080" />
+  </Rule>
+  <Rule>
+    <Filter>([landuse] = 'forest')</Filter>
+    <PolygonSymbolizer fill="#a0d0a0" />
+  </Rule>
+  <Rule>
+    <Filter>([natural] = 'wood')</Filter>
+    <PolygonSymbolizer fill="#a0d0a0" />
+  </Rule>
+  <Rule>
+    <Filter>([landuse] = 'industrial')</Filter>
+    <PolygonSymbolizer fill="#a0a0a0" />
+  </Rule>
+  <Rule>
+    <Filter>([landuse] = 'residential')</Filter>
+    <PolygonSymbolizer fill="#b0b0b0" />
+  </Rule>
+</Style>
+<Layer
+      name="landuse"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>landuse</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,landuse,"natural",name from planet_osm_polygon where (landuse is not null or "natural" is not null)) as landuse]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="leisure-poly" filter-mode="first">
+  <Rule>
+    <Filter>([leisure] = 'park')</Filter>
+    <PolygonSymbolizer fill="#80c080" />
+  </Rule>
+</Style>
+<Layer
+      name="leisure-poly"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>leisure-poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,leisure,name from planet_osm_polygon where leisure is not null) as leisure]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="natural-poly" filter-mode="first">
+  <Rule>
+    <Filter>([natural] = 'water')</Filter>
+    <PolygonSymbolizer fill="#0a0aff" />
+  </Rule>
+  <Rule>
+    <Filter>([natural] = 'beach')</Filter>
+    <PolygonSymbolizer fill="#ffffa0" />
+  </Rule>
+</Style>
+<Layer
+      name="natural-poly"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>natural-poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,"natural",name from planet_osm_polygon where "natural" is not null) as "natural"]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="natural-line" filter-mode="first">
+  <Rule>
+    <Filter>([natural] = 'stream')</Filter>
+    <LineSymbolizer stroke="#0000ff" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([natural] = 'river')</Filter>
+    <LineSymbolizer stroke="#0000ff" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([natural] = 'drain')</Filter>
+    <LineSymbolizer stroke="#0000ff" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([natural] = 'cliff')</Filter>
+    <LineSymbolizer stroke="#0000ff" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#00ff00" stroke-width="1" />
+  </Rule>
+</Style>
+<Style name="natural-line-outline" filter-mode="first">
+  <Rule>
+    <Filter>([natural] = 'cliff')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="6" />
+  </Rule>
+</Style>
+<Layer
+      name="natural-line"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>natural-line-outline</StyleName>
+    <StyleName>natural-line</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,"natural",name from planet_osm_line where "natural" is not null) as "natural"]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="waterway-line" filter-mode="first">
+  <Rule>
+    <Filter>([waterway] = 'stream')</Filter>
+    <LineSymbolizer stroke="#1010f0" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <Filter>([waterway] = 'river')</Filter>
+    <LineSymbolizer stroke="#1010f0" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <Filter>([waterway] = 'drain')</Filter>
+    <LineSymbolizer stroke="#1010f0" stroke-width="1" />
+  </Rule>
+</Style>
+<Layer
+      name="waterway-line"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>waterway-line</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,waterway,name from planet_osm_line where waterway is not null) as waterway]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="contours" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#9cb197" stroke-width="0.5" />
+    <TextSymbolizer fill="#9cb197" name="[height]" fontset-name="fontset-0" character-spacing="1" size="5" allow-overlap="false" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" placement="line" />
+  </Rule>
+</Style>
+<Layer
+      name="contours"
+   srs="+proj=latlong +datum=WGS84">
+    <StyleName>contours</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,height from contours where height::integer % 10 = 0) as contours]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="amenity-poly" filter-mode="first">
+  <Rule>
+    <Filter>([amenity] = 'parking')</Filter>
+    <PolygonSymbolizer fill="#000000" />
+  </Rule>
+</Style>
+<Layer
+      name="amenity-poly"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>amenity-poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,amenity,name from planet_osm_polygon where amenity is not null) as amenity]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="building-poly" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#404040" />
+  </Rule>
+</Style>
+<Layer
+      name="building-poly"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>building-poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,building,name from planet_osm_polygon where building is not null) as building]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="highways" filter-mode="first">
+  <Rule>
+    <Filter>([highway] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#0000ff" stroke-width="3" stroke-linejoin="miter" />
+    <TextSymbolizer size="3" placement="line" fontset-name="fontset-1" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#0000ff" stroke-width="3" stroke-linejoin="miter" />
+    <TextSymbolizer size="3" placement="line" fontset-name="fontset-2" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#ff0000" stroke-width="2" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-3" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'primary')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#ff0000" stroke-width="2" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-4" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#ff0000" stroke-width="2" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-5" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'trunk')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#ff0000" stroke-width="2" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-6" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'secondary')</Filter>
+    <LineSymbolizer stroke="#ffff00" stroke-width="2" stroke-linejoin="miter" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-7" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke="#ffff00" stroke-width="2" stroke-linejoin="miter" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-8" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'tertiary')</Filter>
+    <LineSymbolizer stroke="#ffd000" stroke-width="3" stroke-linejoin="miter" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-9" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'tertiary_link')</Filter>
+    <LineSymbolizer stroke="#ffd000" stroke-width="3" stroke-linejoin="miter" />
+    <TextSymbolizer size="0" placement="line" fontset-name="fontset-10" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'service')</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-11" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'road')</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-12" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'residential')</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-13" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'unclassified')</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-14" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#f0f0c0" stroke-width="1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-15" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'track')</Filter>
+    <LineSymbolizer stroke="#f0f0c0" stroke-width="1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-16" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'footway')</Filter>
+    <LineSymbolizer stroke="#05a005" stroke-width="0.5" stroke-dasharray="2, 1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-17" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'path')</Filter>
+    <LineSymbolizer stroke="#05a005" stroke-width="0.5" stroke-dasharray="2, 1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-18" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'steps')</Filter>
+    <LineSymbolizer stroke="#05a005" stroke-width="0.5" stroke-dasharray="2, 1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-19" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'pedestrian')</Filter>
+    <LineSymbolizer stroke="#05a005" stroke-width="0.5" stroke-dasharray="2, 1" stroke-linejoin="miter" />
+    <TextSymbolizer placement="line" fontset-name="fontset-20" name="[name]" size="0" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-linejoin="miter" stroke="#00ff00" stroke-width="1" />
+    <TextSymbolizer placement="line" fontset-name="fontset-21" name="[name]" size="0" />
+  </Rule>
+</Style>
+<Style name="highways-outline" filter-mode="first">
+  <Rule>
+    <Filter>([highway] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'primary_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'trunk')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'primary')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'secondary')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'secondary_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'tertiary')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'tertiary_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'residential')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="2" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'service')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="2" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'road')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="2" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'unclassified')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="4" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'cycleway')</Filter>
+    <LineSymbolizer stroke="#a0a0a0" stroke-width="2" stroke-dasharray="2, 1" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'track')</Filter>
+    <LineSymbolizer stroke="#a0a0a0" stroke-width="2" stroke-dasharray="2, 1" />
+  </Rule>
+</Style>
+<Layer
+      name="highways"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>highways-outline</StyleName>
+    <StyleName>highways</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,planet_osm_line.highway,name,ref,priority from planet_osm_line join highway_priorities on (planet_osm_line.highway=highway_priorities.highway) where planet_osm_line.highway is not null order by priority desc) as highways]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="places" filter-mode="first">
+  <Rule>
+    <Filter>([place] = 'village')</Filter>
+    <TextSymbolizer name="[name]" fontset-name="fontset-22" text-transform="uppercase" character-spacing="1" line-spacing="4" size="6" wrap-width="60" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" />
+  </Rule>
+  <Rule>
+    <Filter>([place] = 'town')</Filter>
+    <TextSymbolizer name="[name]" fontset-name="fontset-23" text-transform="uppercase" character-spacing="1" line-spacing="4" size="8" wrap-width="60" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" />
+  </Rule>
+</Style>
+<Layer
+      name="places"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>places</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,place,name from planet_osm_point where place is not null) as places]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer
+      name="aeroway-point"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,aeroway,name from planet_osm_point where aeroway is not null) as aeroway]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer
+      name="amenity-point"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,amenity,name from planet_osm_point where amenity is not null) as amenity]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="historic-point" filter-mode="first">
+  <Rule>
+    <Filter>([historic] = 'ruin')</Filter>
+    <PointSymbolizer file="symbols/tourist_ruin.glow.32.png" allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-24" dy="5" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([historic] = 'ruins')</Filter>
+    <PointSymbolizer file="symbols/tourist_ruin.glow.32.png" allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-25" dy="5" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([historic] = 'castle')</Filter>
+    <PointSymbolizer file="symbols/tourist_ruin.glow.32.png" allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-26" dy="5" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([historic] = 'archaeological_site')</Filter>
+    <PointSymbolizer file="symbols/tourist_ruin.glow.32.png" allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-27" dy="5" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([historic] = 'monument')</Filter>
+    <PointSymbolizer file="symbols/tourist_ruin.glow.32.png" allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-28" dy="5" name="[name]" />
+  </Rule>
+  <Rule>
+    <Filter>([historic] = 'memorial')</Filter>
+    <PointSymbolizer file="symbols/tourist_ruin.glow.32.png" allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-29" dy="5" name="[name]" />
+  </Rule>
+  <Rule>
+    <PointSymbolizer allow-overlap="true" />
+    <TextSymbolizer size="0" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" fontset-name="fontset-30" dy="5" name="[name]" />
+  </Rule>
+</Style>
+<Layer
+      name="historic-point"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>historic-point</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,historic,name from planet_osm_point where historic is not null) as historic]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer
+      name="shop-point"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,shop,name from planet_osm_point where shop is not null) as shop]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="routes" filter-mode="first">
+  <Rule>
+    <Filter>([route] = 'hiking')</Filter>
+    <LineSymbolizer stroke-linejoin="miter" stroke="rgba(0, 0, 255, 0.5)" stroke-width="2" />
+  </Rule>
+  <Rule>
+    <Filter>([route] = 'foot')</Filter>
+    <LineSymbolizer stroke-linejoin="miter" stroke="rgba(0, 0, 255, 0.5)" stroke-width="2" />
+  </Rule>
+</Style>
+<Layer
+      name="routes"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs">
+    <StyleName>routes</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[mapnik]]></Parameter>
+       <Parameter name="user"><![CDATA[www]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,route,name,ref from planet_osm_line where route is not null) as routes]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
