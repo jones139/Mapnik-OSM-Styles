@@ -40,8 +40,9 @@ if __name__ == "__main__":
     # Three Villages
     ll = (-1.311, 54.633, -1.237, 54.689)
 
-    # Weardale
+    # Weardale Way
     ll = (-2.29,54.747,-2.22,54.813) 
+    ll = (-2.29,54.73,-2.00,54.790) 
     #---------------------------------------------------
 
     print "Making Mapnik2 compatible style from standard OSM stylesheets"
@@ -55,12 +56,16 @@ if __name__ == "__main__":
     #imgy_cm = 28.0
 
     # A3 Portrait
-    imgx_cm = 28.0
-    imgy_cm = 40.0
+    #imgx_cm = 28.0
+    #imgy_cm = 40.0
 
     # A4 Portrait
-    imgx_cm = 14.0
-    imgy_cm = 20.0
+    #imgx_cm = 14.0
+    #imgy_cm = 20.0
+
+    # A4 Landscape
+    imgx_cm = 20.0
+    imgy_cm = 14.0
 
     img_dpi = 300.0
 

@@ -2,6 +2,7 @@
 @bw: 1;  /*border width */
 #highways {
    line-join:miter;
+   line-cap:square;
    line-color:#00ff00;
    line-width:1;
     text-placement:line;
@@ -21,28 +22,29 @@
 
    [highway="track"],
    [highway="cycleway"] {
-     ::outline { line-color:#a0a0a0; line-width:2; line-dasharray:2,1;}
+     ::outline { line-cap:square; line-color:#a0a0a0; line-width:2; line-dasharray:2,1;}
    	line-color:#f0f0c0;
    	line-width:1;
    }
 
 
    [highway="unclassified"] {
-	::outline { line-color:#000000; line-width:@lw+@bw+(-0); }
+	::outline { line-cap:square;  line-color:#000000; line-width:@lw+@bw+(-0); }
    	line-color:#ffffff;
    	line-width:@lw+(-0);
    }
    [highway="service"], 
    [highway="road"], 
    [highway="residential"] {
-   ::outline { line-color:#000; line-width:@lw+@bw+(-2); }
+   ::outline { line-cap:square;  line-color:#000; line-width:@lw+@bw+(-2); }
    line-color:#ffffff;
    line-width:@lw+(-2);
    }
 
    [highway="tertiary"],
    [highway="tertiary_link"] {
-   ::outline {    line-join:round;
+   ::outline {     line-cap:square; 
+   	     	   line-join:round;
    	     	  line-color:#000; 
 		  line-width:@lw+@bw+(-0); }
    line-color:#ffd000;
@@ -53,7 +55,8 @@
    [highway="secondary"],
    [highway="secondary_link"] 
    {
-   ::outline {    line-join:round;
+   ::outline {     line-cap:square; 
+   	     	   line-join:round;
    	     	  line-color:#000; 
 		  line-width:@lw+@bw+(-1); }
    line-color:#ffff00;
@@ -71,7 +74,8 @@
    [highway="primary"], 
    [highway="primary_link"] 
    {
-   ::outline {    line-join:round;
+   ::outline {     line-cap:square; 
+   	     	   line-join:round;
    	     	  line-color:#000; 
 		  line-width:@lw+@bw+(-1); }
    line-join:round;
@@ -83,7 +87,7 @@
    [highway="motorway"],
    [highway="motorway_link"] 
    {
-   ::outline { line-color:#000; line-width:@lw+@bw; }
+   ::outline {  line-cap:square; line-color:#000; line-width:@lw+@bw; }
    line-color:#0000ff;
    line-width:@lw;
     text-size:3;

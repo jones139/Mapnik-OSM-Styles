@@ -2,7 +2,7 @@
    [route="hiking"],
    [route="foot"] {
    line-join:miter;
-   line-color:rgba(0,0,255,0.5);
+   line-color:rgba(255,255,0,0.5);
    line-width:2;
  
 /*   text-placement:line;
