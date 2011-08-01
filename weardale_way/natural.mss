@@ -1,8 +1,25 @@
 @water: #1010f0;
 
+
+#natural-poly {
+   [natural="beach"]
+   {
+      polygon-fill: #ffffa0;
+   }
+/*   [natural="wood"]
+   {
+      polygon-fill: #10a010;
+   }
+*/
+   [natural="water"]
+   {
+      polygon-fill: #0a0aff;
+   }
+}
+
 #natural-line {
-   line-color:#00ff00;
-   line-width:1;
+   line-color:#ffffff;
+   line-width:5;
 
    [natural="cliff"]
    {
@@ -17,16 +34,5 @@
    {
      line-color:#0000ff;
      line-width:3
-   }
-}
-
-#natural-poly {
-   [natural="beach"]
-   {
-      polygon-fill: #ffffa0;
-   }
-   [natural="water"]
-   {
-      polygon-fill: #0a0aff;
    }
 }

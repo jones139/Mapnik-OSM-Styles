@@ -1,14 +1,19 @@
 
-polygon-opacity:0.5;
 
 #landuse {
+   polygon-opacity:0.5;
    [landuse="residential"]
    {
       polygon-fill: #b0b0b0;
    }
-   [landuse="industrial"]
+   [landuse="industrial"],
+   [landuse="quarry"]
    {
       polygon-fill: #a0a0a0;
+   }
+   [landuse="brownfield"]
+   {
+      polygon-fill: #d0d0a0;
    }
    [landuse="forest"],
    [natural="wood"]
@@ -18,6 +23,10 @@ polygon-opacity:0.5;
    [landuse="farmyard"]
    {
       polygon-fill: #80d080;
+   }
+   [landuse="reservoir"]
+   {
+      polygon-fill: #1010f0;
    }
 }
 
