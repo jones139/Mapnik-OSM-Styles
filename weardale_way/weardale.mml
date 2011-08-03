@@ -3,7 +3,9 @@
 "_format":"png",
 "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
 
-"Stylesheet":["style.mss",
+"Stylesheet":[
+	"colours.mss",
+	"style.mss",
 	"areas.mss",
 	"waterway.mss",
 	"roads.mss",
@@ -272,7 +274,7 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,route,name,ref from planet_osm_line where route is not null) as routes"
+	       "table":"(select way,route,name,route_name,ref from planet_osm_line where route is not null) as routes"
                 }
   }
 

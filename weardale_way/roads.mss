@@ -1,4 +1,4 @@
-@lw: 3;  /*base line width */
+@lw: 2;  /*base line width */
 @bw: 1;  /*border width */
 #highways {
    line-join:miter;
@@ -21,6 +21,8 @@
    }
 
    [highway="track"],
+   [highway="bridleway"],
+   [highway="public_bridleway"],
    [highway="cycleway"] {
      ::outline { line-cap:square; line-color:#a0a0a0; line-width:2; line-dasharray:2,1;}
    	line-color:#f0f0c0;
@@ -33,12 +35,13 @@
    	line-color:#ffffff;
    	line-width:@lw+(-0);
    }
+
    [highway="service"], 
    [highway="road"], 
    [highway="residential"] {
-   ::outline { line-cap:square;  line-color:#000; line-width:@lw+@bw+(-2); }
+   ::outline { line-cap:square;  line-color:#000; line-width:@lw+@bw+(-0); }
    line-color:#ffffff;
-   line-width:@lw+(-2);
+   line-width:@lw+(-0);
    }
 
    [highway="tertiary"],
@@ -58,9 +61,9 @@
    ::outline {     line-cap:square; 
    	     	   line-join:round;
    	     	  line-color:#000; 
-		  line-width:@lw+@bw+(-1); }
+		  line-width:@lw+@bw+(-0); }
    line-color:#ffff00;
-   line-width:@lw+(-1);
+   line-width:@lw+(-0);
     text-size:0;
     /*shield-file: url('symbols/secondary_shield1.png');
     shield-name:"[ref]";
@@ -77,10 +80,10 @@
    ::outline {     line-cap:square; 
    	     	   line-join:round;
    	     	  line-color:#000; 
-		  line-width:@lw+@bw+(-1); }
+		  line-width:@lw+@bw+(-0); }
    line-join:round;
    line-color:#ff0000;
-   line-width:@lw+(-1);
+   line-width:@lw+(-0);
     text-size:0;
    }
 

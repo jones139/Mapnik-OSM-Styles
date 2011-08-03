@@ -1,32 +1,40 @@
-
-
 #landuse {
+   text-placement:point;
+    text-face-name:@serif;
+    text-name:"[name]";
+    text-size:4;
+    text-spacing: 10;
+    text-halo-radius:0.5;
+    text-halo-fill:rgba(255,255,255,0.5);
+
    polygon-opacity:0.5;
    [landuse="residential"]
    {
-      polygon-fill: #b0b0b0;
+      polygon-fill: @residential;
    }
    [landuse="industrial"],
    [landuse="quarry"]
    {
-      polygon-fill: #a0a0a0;
+      polygon-fill: @industrial;
    }
    [landuse="brownfield"]
    {
-      polygon-fill: #d0d0a0;
+      polygon-fill: @brownfield;
    }
    [landuse="forest"],
    [natural="wood"]
    {
-      polygon-fill: #a0d0a0;
+      polygon-fill: @forest;
+      polygon-opacity:0.5;
+      polygon-pattern-file: url("symbols/forest.png");
    }
    [landuse="farmyard"]
    {
-      polygon-fill: #80d080;
+      polygon-fill: @farmyard;
    }
    [landuse="reservoir"]
    {
-      polygon-fill: #1010f0;
+      polygon-fill: @water;
    }
 }
 
