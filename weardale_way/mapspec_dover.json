@@ -1,0 +1,18 @@
+{
+"jobID":1,
+"projection":"merc",
+"origin":{"lat":51.113,"lon":1.2880},
+"scale":15000,
+"paper":{"size":"A4","orientation":"landscape"},
+"resolution":300,
+"baseMap":"osm",
+"baseStyle":"file:osm.tgz",
+"baseSymbolSet":"file:symbols.tgz",
+"extraSymbols":"file:extrasymbols.tgz",
+"overlays":[
+	"grid",
+	"contours",
+	"file:route.tgz",
+	"file:gpx.tgz"
+	]
+}
