@@ -38,7 +38,7 @@
    srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
     <StyleName>grid</StyleName>
     <Datasource>
-       <Parameter name="file">/home/graham/OSM/data/keffalonia_map/grid.shp</Parameter>
+       <Parameter name="file">/home/OSM/data/Mapnik-OSM-Styles/keffalonia_map/grid.shp</Parameter>
        <Parameter name="type">shape</Parameter>
     </Datasource>
   </Layer>
@@ -214,12 +214,12 @@
 
 <Style name="highways" filter-mode="first">
   <Rule>
-    <Filter>([highway] = 'motorway_link')</Filter>
+    <Filter>([highway] = 'motorway')</Filter>
     <LineSymbolizer stroke="#0000ff" stroke-width="3" stroke-linejoin="round" />
     <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
   </Rule>
   <Rule>
-    <Filter>([highway] = 'motorway')</Filter>
+    <Filter>([highway] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#0000ff" stroke-width="3" stroke-linejoin="round" />
     <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
   </Rule>
@@ -281,11 +281,6 @@
   <Rule>
     <Filter>([highway] = 'unclassified')</Filter>
     <LineSymbolizer stroke="#ffffff" stroke-width="1" stroke-linejoin="round" />
-    <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
-  </Rule>
-  <Rule>
-    <Filter>([highway] = 'path')</Filter>
-    <LineSymbolizer stroke="#05a005" stroke-width="0.5" stroke-linejoin="round" />
     <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
   </Rule>
   <Rule>
@@ -304,6 +299,11 @@
     <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
   </Rule>
   <Rule>
+    <Filter>([highway] = 'path')</Filter>
+    <LineSymbolizer stroke="#05a005" stroke-width="0.5" stroke-linejoin="round" />
+    <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
+  </Rule>
+  <Rule>
     <Filter>([highway] = 'track')</Filter>
     <LineSymbolizer stroke="#10c010" stroke-width="1" stroke-linejoin="round" />
     <TextSymbolizer placement="line" fontset-name="fontset-0" name="[name]" size="3" />
@@ -315,12 +315,16 @@
 </Style>
 <Style name="highways-outline" filter-mode="first">
   <Rule>
+    <Filter>([highway] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="3" />
+  </Rule>
+  <Rule>
     <Filter>([highway] = 'motorway')</Filter>
     <LineSymbolizer stroke="#000000" stroke-width="3" />
   </Rule>
   <Rule>
-    <Filter>([highway] = 'motorway_link')</Filter>
-    <LineSymbolizer stroke="#000000" stroke-width="3" />
+    <Filter>([highway] = 'trunk_link')</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="2" />
   </Rule>
   <Rule>
     <Filter>([highway] = 'primary_link')</Filter>
@@ -328,10 +332,6 @@
   </Rule>
   <Rule>
     <Filter>([highway] = 'primary')</Filter>
-    <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="2" />
-  </Rule>
-  <Rule>
-    <Filter>([highway] = 'trunk_link')</Filter>
     <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="2" />
   </Rule>
   <Rule>
@@ -355,10 +355,6 @@
     <LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="2" />
   </Rule>
   <Rule>
-    <Filter>([highway] = 'unclassified')</Filter>
-    <LineSymbolizer stroke="#000000" stroke-width="1" />
-  </Rule>
-  <Rule>
     <Filter>([highway] = 'residential')</Filter>
     <LineSymbolizer stroke="#000000" stroke-width="1" />
   </Rule>
@@ -368,6 +364,10 @@
   </Rule>
   <Rule>
     <Filter>([highway] = 'service')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'unclassified')</Filter>
     <LineSymbolizer stroke="#000000" stroke-width="1" />
   </Rule>
 </Style>
@@ -441,22 +441,22 @@
 <Style name="amenity-point" filter-mode="first">
   <Rule>
     <Filter>([amenity] = 'bank')</Filter>
-    <PointSymbolizer file="symbols/money_bank.glow.32.png" allow-overlap="true" />
-    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="8" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" />
+    <PointSymbolizer file="symbols/money_bank.glow.32.png" allow-overlap="false" />
+    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="4" allow-overlap="true" halo-radius="0.5" halo-fill="rgba(255, 255, 255, 0.75)" />
   </Rule>
   <Rule>
     <Filter>([amenity] = 'pharmacy')</Filter>
-    <PointSymbolizer file="symbols/health_pharmacy.glow.32.png" allow-overlap="true" />
-    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="8" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" />
+    <PointSymbolizer file="symbols/health_pharmacy.glow.32.png" allow-overlap="false" />
+    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="4" allow-overlap="true" halo-radius="0.5" halo-fill="rgba(255, 255, 255, 0.75)" />
   </Rule>
   <Rule>
     <Filter>([amenity] = 'fuel')</Filter>
-    <PointSymbolizer file="symbols/transport_fuel.glow.32.png" allow-overlap="true" />
-    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="8" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" />
+    <PointSymbolizer file="symbols/transport_fuel.glow.32.png" allow-overlap="false" />
+    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="4" allow-overlap="true" halo-radius="0.5" halo-fill="rgba(255, 255, 255, 0.75)" />
   </Rule>
   <Rule>
-    <PointSymbolizer allow-overlap="true" />
-    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="8" allow-overlap="true" halo-radius="1" halo-fill="rgba(255, 255, 255, 0.75)" />
+    <PointSymbolizer allow-overlap="false" />
+    <TextSymbolizer name="[name:en]" fontset-name="fontset-0" size="4" allow-overlap="true" halo-radius="0.5" halo-fill="rgba(255, 255, 255, 0.75)" />
   </Rule>
 </Style>
 <Layer

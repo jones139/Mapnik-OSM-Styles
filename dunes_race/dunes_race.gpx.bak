@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<gpx version="1.1"
+     creator="Graham Jones">
+<rte>
+    <name>Route Created by Graham's Leaflet Based Route Editor</name>
+   <rtept lat="54.63770915465649"  lon="-1.1879181861877441" >
+     <name>Start</name>
+   </rtept>
+   <rtept lat="54.63835491211392"  lon="-1.1920166015625" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63942287309502"  lon="-1.191244125366211" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.637957524123046"  lon="-1.1863946914672852" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.637361434854576"  lon="-1.17828369140625" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63835491211392"  lon="-1.1772537231445312" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.639100004128835"  lon="-1.1776399612426758" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63964639626201"  lon="-1.1774253845214844" >
+     <name>Marshal</name>
+   </rtept>
+   <rtept lat="54.638603277635994"  lon="-1.1741209030151367" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63850393160922"  lon="-1.1730265617370605" >
+     <name>Marshal</name>
+   </rtept>
+   <rtept lat="54.64086333416916"  lon="-1.1728549003601074" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.64406693530402"  lon="-1.1732196807861328" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.644973334766945"  lon="-1.1730694770812988" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.6459914580079"  lon="-1.1737561225891113" >
+     <name>Marshal</name>
+   </rtept>
+   <rtept lat="54.64570588942809"  lon="-1.1753225326538086" >
+     <name>Turn Right after Gate</name>
+   </rtept>
+   <rtept lat="54.64952985874593"  lon="-1.1793994903564453" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.65244725571837"  lon="-1.1860084533691406" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.65391208245362"  lon="-1.1875319480895996" >
+     <name>Turn Right after Gate</name>
+   </rtept>
+   <rtept lat="54.65552581349202"  lon="-1.1865448951721191" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.65723878093498"  lon="-1.1864161491394043" >
+     <name>Marshal</name>
+   </rtept>
+   <rtept lat="54.65733808118098"  lon="-1.1855578422546387" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.65654367241799"  lon="-1.184828281402588" >
+     <name>Cross Car Park</name>
+   </rtept>
+   <rtept lat="54.656270590818586"  lon="-1.182875633239746" >
+     <name>Join Beach</name>
+   </rtept>
+   <rtept lat="54.6536513968121"  lon="-1.1774039268493652" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.65094513279353"  lon="-1.1722540855407715" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.64960434808234"  lon="-1.169743537902832" >
+     <name>Leave Beach - Follow Flags</name>
+   </rtept>
+   <rtept lat="54.647642750018406"  lon="-1.1674690246582031" >
+     <name>Follow Path through Dunes</name>
+   </rtept>
+   <rtept lat="54.64673641007729"  lon="-1.166696548461914" >
+     <name>Join Track</name>
+   </rtept>
+   <rtept lat="54.64647567840597"  lon="-1.1681127548217773" >
+     <name>Descend onto Beach</name>
+   </rtept>
+   <rtept lat="54.64457601146283"  lon="-1.1670398712158203" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.640503223685066"  lon="-1.1674261093139648" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63834249379798"  lon="-1.1676406860351562" >
+     <name>Marshal</name>
+   </rtept>
+   <rtept lat="54.637920268799746"  lon="-1.1694645881652832" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63871504162595"  lon="-1.1738204956054688" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63974573949736"  lon="-1.1770820617675781" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.639100004128835"  lon="-1.1776399612426758" >
+     <name></name>
+    </rtept>
+   <rtept lat="54.63835491211392"  lon="-1.1769747734069824" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63731176035441"  lon="-1.1781549453735352" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.637883013442355"  lon="-1.1865019798278809" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.639286274999144"  lon="-1.1912012100219727" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63842942192982"  lon="-1.1917591094970703" >
+     <name></name>
+   </rtept>
+   <rtept lat="54.63794510568574"  lon="-1.187896728515625" >
+     <name>*** Finish ***</name>
+   </rtept>
+</rte>
+</gpx>

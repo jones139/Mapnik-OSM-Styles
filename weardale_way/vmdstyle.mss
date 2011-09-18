@@ -19,7 +19,7 @@
        line-color:#000000;
        line-width:0.25;
 }
-.RailwayTrack {
+.Rail {
        line-color:#000000;
        line-width:1;
 }
@@ -30,7 +30,21 @@
 }
 
 .Buildings {
-       polygon-fill:#000000;
+       polygon-fill:#808080;
+       line-width:0.25;
+       line-color:#000000;
+}
+
+.Places {
+	   text-name:"[NAME]";
+	   text-placement:point;
+	   text-face-name:@serif;
+    	   text-size:4;
+   	   text-allow-overlap:false;
+    	   text-wrap-width:20;
+    	   text-halo-radius:0.5;
+    	   text-halo-fill:rgba(255,255,255,0.75);
+
 }
 .Roads {
 
@@ -51,7 +65,6 @@
    	   text-allow-overlap:false;
     	   text-halo-radius:0.5;
     	   text-halo-fill:rgba(255,255,255,0.75);
-
        }
 
        [CLASSIFICA="B Road"] {
@@ -70,10 +83,10 @@
        	   ::outline {     line-cap:square; 
    	     	   line-join:round;
    	     	  line-color:#000; 
-		  line-width:3; }
+		  line-width:2; }
    	   line-join:round;
    	   line-color:#ffffff;
-   	   line-width:2;
+   	   line-width:1.5;
        }
 
 }

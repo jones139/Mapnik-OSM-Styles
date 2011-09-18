@@ -562,7 +562,7 @@
     </Rule>
     <Rule>
       <Filter>[natural] = 'beach'</Filter>
-      &maxscale_zoom13;
+      &maxscale_zoom0;
       <PolygonPatternSymbolizer file="&symbols;/beach.png" />
     </Rule>
     <Rule>

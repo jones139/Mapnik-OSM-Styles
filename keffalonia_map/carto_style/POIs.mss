@@ -1,10 +1,10 @@
 #amenity-point {
-    point-allow-overlap:true;
+    point-allow-overlap:false;
     text-name:"[name:en]";
     text-face-name:@serif;
-    text-size:8;
+    text-size:4;
     text-allow-overlap:true;
-    text-halo-radius:1;
+    text-halo-radius:0.5;
     text-halo-fill:rgba(255,255,255,0.75);
    [amenity="fuel"] 
    {
