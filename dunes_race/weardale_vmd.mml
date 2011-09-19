@@ -381,7 +381,7 @@
   "geometry":"line",
   "Datasource": {
                "type":"ogr",
-               "file":"./dunes_race.gpx",
+               "file":"./dunes_race_short.gpx",
                "layer":"routes"
                 }
   },
@@ -392,7 +392,7 @@
   "geometry":"point",
   "Datasource": {
                "type":"ogr",
-               "file":"./dunes_race.gpx",
+               "file":"./dunes_race_short.gpx",
                "layer":"route_points"
                 }
   }

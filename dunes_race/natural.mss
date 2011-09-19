@@ -21,6 +21,14 @@
       polygon-pattern-file: url("symbols/beach.png");
    }
 
+   [natural="rocks"],
+   [natural="scree"],
+   {
+      polygon-opacity:1;
+      polygon-pattern-file: url("symbols/scree.png");
+   }
+
+
    [natural="water"]
    {
       polygon-fill: @water;
