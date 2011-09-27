@@ -1,0 +1,14 @@
+Hartlepool
+==========
+
+Bounding Box:  -1.311, 54.608
+	       -1.111, 54.729
+
+OSM Data Download Command:
+wget http://jxapi.openstreetmap.org/xapi/api/0.6/map?bbox=-1.311492919921875,54.60786894786166,-1.110992431640625,54.729378425601766 -O hartlepool.osm
+
+
+SRTM Data for Contours
+wget http://dds.cr.usgs.gov/srtm/version2_1/SRTM3/Eurasia/N54W002.hgt.zip
+
+

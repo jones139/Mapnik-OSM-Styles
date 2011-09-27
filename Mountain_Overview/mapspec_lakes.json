@@ -1,0 +1,23 @@
+{
+"jobID":1,
+"projection":"merc",
+"origin":{"lat":54.15,"lon":-3.62},
+"scale":1000000,
+"paper":{"size":"A4","orientation":"portrait"},
+"resolution":300,
+"baseMap":"Mountains.mml",
+"baseStyle":"file:osm.tgz",
+"baseSymbolSet":"file:symbols.tgz",
+"extraSymbols":"file:extrasymbols.tgz",
+"overlays":[
+	"grid",
+	"contours",
+	"file:route.tgz",
+	"file:gpx.tgz"
+	],
+"processing":{
+	"downloadOsmData":true,
+	"downloadSrtmData":true,
+	"createGridShapefile":true
+	}
+}
