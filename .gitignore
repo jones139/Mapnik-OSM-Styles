@@ -1,5 +1,13 @@
 osm2.xml
 osm_carto.xml
+srtm_tmp
+srtm_tmp/*
+srtm_cache
+srtm_cache/*
+*.shp
+*.prj
+*.dbf
+*.shx
 *~
 
 

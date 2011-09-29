@@ -1,4 +1,4 @@
-@water: #d0d0ff;
+@water: #a0a0ff;
 @land: #c0c0a0;
 @waterline: #8CE;
 @forest:#50d050;

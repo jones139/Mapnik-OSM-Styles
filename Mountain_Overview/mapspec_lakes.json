@@ -1,9 +1,9 @@
 {
 "jobID":1,
 "projection":"merc",
-"origin":{"lat":54.15,"lon":-3.62},
-"scale":1000000,
-"paper":{"size":"A4","orientation":"portrait"},
+"origin":{"lat":54.33,"lon":-3.44},
+"scale":250000,
+"paper":{"size":"A3","orientation":"portrait"},
 "resolution":300,
 "baseMap":"Mountains.mml",
 "baseStyle":"file:osm.tgz",
@@ -15,9 +15,20 @@
 	"file:route.tgz",
 	"file:gpx.tgz"
 	],
+"Layers":[
+	"coastline",
+	"osm_landuse",
+	"osm_natual",
+	"osm_osm_amenity",
+	"osm_osm_roads",
+	"osm_osm_paths",
+	"contours",
+	"hillshading"
+	"grid"
+	],
 "processing":{
-	"downloadOsmData":true,
-	"downloadSrtmData":true,
+	"downloadOsmData":false,
+	"downloadSrtmData":false,
 	"createGridShapefile":true
 	}
 }
