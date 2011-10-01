@@ -1,0 +1,15 @@
+{
+"world_boundaries":"/home/OSM/data/mapdata/world_boundaries",
+"srtm_path":"./srtm_tmp",
+"hillshadeTif":"hillshade.tiff",
+"contoursShp":"contours.shp",
+"osm_db":  {
+	   "type":"postgis",
+	   "dbname":"mapnik",
+	   "user":"www",
+	   "password":"1234",
+	   "host":"localhost",
+	   "port":""
+ 	},
+"vmd_path":"/home/OSM/data/vmd"
+}

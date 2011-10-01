@@ -1,0 +1,42 @@
+{
+"jobID":1,
+"projection":"merc",
+"origin":{"lat":54.64,"lon":-1.4},
+"scale":250000,
+"paper":{"size":"A4","orientation":"portrait"},
+"resolution":300,
+"#baseMap":"Mountains.mml",
+"baseStyle":"file:osm.tgz",
+"baseSymbolSet":"file:symbols.tgz",
+"extraSymbols":"file:extrasymbols.tgz",
+"overlays":[
+	"grid",
+	"contours",
+	"file:route.tgz",
+	"file:gpx.tgz"
+	],
+"Layers":[
+	"coastline",
+	"#osm_landuse",
+	"#osm_amenity",
+	"#osm_roads",
+	"vmd_woodland",
+	"vmd_water",
+	"#vmd_ornament",
+	"grid",
+	"vmd_electricity",
+	"vmd_rail",
+	"vmd_roads",
+	"osm_paths",
+	"vmd_places",
+	"#vmd_heights",
+	"#osm_natural",
+	"contours",
+	"hillshading"
+	],
+"processing":{
+	"downloadOsmData":false,
+	"downloadSrtmData":false,
+	"createGridShapefile":true
+	}
+}

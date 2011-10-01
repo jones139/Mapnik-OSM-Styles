@@ -1,4 +1,4 @@
-#landuse {
+.osm_landuse {
    text-placement:point;
     text-face-name:@serif;
     text-name:"[name]";
@@ -22,7 +22,6 @@
       polygon-fill: @brownfield;
    }
    [landuse="forest"],
-   [natural="wood"]
    {
       polygon-fill: @forest;
       polygon-opacity:0.5;
@@ -53,10 +52,16 @@
     text-size:5;*/
 }
 
-#amenity-poly {
+#osm_amenity_poly {
    [amenity="parking"]
    {
       polygon-fill:#000000;
    }
 
+}
+
+#osm_amenity_line {
+}
+
+#osm_amenity_point {
 }

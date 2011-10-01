@@ -1,52 +1,72 @@
+@water: #d0d0ff;
+@land: #c0c0a0;
+@waterline: #8CE;
+@forest:#50d050;
+@farmyard:#80d080;
+@brownfield:#d0d0a0;
+@residential:#b0b0b0;
+@industrial:#a0a0a0;
 
-
-.Woodland {
+.vmd_woodland {
       polygon-fill: @forest;
       polygon-opacity:0.5;
       polygon-pattern-file: url("symbols/forest.png");
 }
 
-.WaterArea {
+.vmd_water_area {
        polygon-fill:@water;
 }
-.WaterLine {
+.vmd_water_line {
        line-color:@water;
        line-width:0.5;
        line-opacity:0.5;
 }
 
-.ElectricityLine {
+.vmd_electricity {
        line-color:#000000;
        line-width:0.25;
 }
-.Rail {
+.vmd_rail {
        line-color:#000000;
        line-width:1;
 }
 
-.Ornament {
+.vmd_ornament {
        line-color:#000000;
        line-width:0.25;
 }
 
-.Buildings {
+.vmd_buildings {
        polygon-fill:#808080;
        line-width:0.25;
        line-color:#000000;
 }
 
-.Places {
+.vmd_places {
 	   text-name:"[NAME]";
 	   text-placement:point;
 	   text-face-name:@serif;
     	   text-size:4;
    	   text-allow-overlap:false;
+    	   text-wrap-width:100;
+    	   text-halo-radius:0.5;
+    	   text-halo-fill:rgba(255,255,255,0.75);
+
+}
+
+.vmd_heights {
+	   text-name:"[HEIGHT]";
+	   text-placement:point;
+	   text-face-name:@serif;
+    	   text-size:4;
+   	   text-allow-overlap:true;
     	   text-wrap-width:20;
     	   text-halo-radius:0.5;
     	   text-halo-fill:rgba(255,255,255,0.75);
 
 }
-.Roads {
+
+.vmd_roads {
 
        [CLASSIFICA="A Road"],
        [CLASSIFICA="Primary Road"] {

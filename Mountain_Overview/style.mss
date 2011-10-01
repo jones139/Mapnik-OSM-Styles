@@ -14,5 +14,5 @@ Map {
 
 #grid {
   line-color:#eeeeee;
-  line-width:1;
+  line-width:0.25;
 }

@@ -1,6 +1,6 @@
 
 
-#natural-poly {
+#osm_natural_poly {
    [natural="beach"]
    {
       polygon-fill: #ffffa0;
@@ -12,7 +12,7 @@
    }
 }
 
-#natural-line {
+#osm_natural_line {
    [natural="cliff"]
    {
       line-pattern-file:url("symbols/cliff2.png");
@@ -20,7 +20,7 @@
 
 }
 
-#natural-point
+#osm_natural_point
    [natural="peak"]
    {
     point-file:url("symbols/poi_peak.p.32.png");

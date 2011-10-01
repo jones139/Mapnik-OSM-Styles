@@ -1,6 +1,6 @@
 @lw: 2;  /*base line width */
 @bw: 1;  /*border width */
-#highways {
+#osm_highways {
    line-join:miter;
    line-cap:square;
    line-color:#00ff00;
