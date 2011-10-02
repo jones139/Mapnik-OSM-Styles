@@ -5,11 +5,12 @@
 "contoursShp":"contours.shp",
 "osm_db":  {
 	   "type":"postgis",
-	   "dbname":"mapnik",
+	   "dbname":"osm_gb",
 	   "user":"www",
 	   "password":"1234",
 	   "host":"localhost",
 	   "port":""
  	},
-"vmd_path":"/home/OSM/data/vmd"
+"vmd_path":"/home/OSM/data/vmd",
+"osm_url":"http://jxapi.openstreetmap.org/xapi/api/0.6/"
 }

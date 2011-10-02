@@ -1,16 +1,39 @@
+.osm_landuse {
+   text-placement:point;
+    text-face-name:@serif;
+    text-name:"[name]";
+    text-size:4;
+    text-spacing: 10;
+    text-halo-radius:0.5;
+    text-halo-fill:rgba(255,255,255,0.5);
 
-#landuse {
+   polygon-opacity:0.5;
    [landuse="residential"]
    {
-      polygon-fill: #b0b0b0;
+      polygon-fill: @residential;
    }
-   [landuse="industrial"]
+   [landuse="industrial"],
+   [landuse="quarry"]
    {
-      polygon-fill: #a0a0a0;
+      polygon-fill: @industrial;
    }
-   [landuse="forest"]
+   [landuse="brownfield"]
    {
-      polygon-fill: #a0d0a0;
+      polygon-fill: @brownfield;
+   }
+   [landuse="forest"],
+   {
+      polygon-fill: @forest;
+      polygon-opacity:0.5;
+      polygon-pattern-file: url("symbols/forest.png");
+   }
+   [landuse="farmyard"]
+   {
+      polygon-fill: @farmyard;
+   }
+   [landuse="reservoir"]
+   {
+      polygon-fill: @water;
    }
 }
 
@@ -22,17 +45,23 @@
 }
 
 #building-poly {
-   polygon-fill: #101010;
+   polygon-fill: #404040;
     /*text-placement:line;*/
-    text-face-name:@serif;
-    text-name:"[name:en]";
-    text-size:5;
+    /*text-face-name:@serif;
+    text-name:"[name]";
+    text-size:5;*/
 }
 
-#amenity-poly {
+#osm_amenity_poly {
    [amenity="parking"]
    {
       polygon-fill:#000000;
    }
 
+}
+
+#osm_amenity_line {
+}
+
+#osm_amenity_point {
 }

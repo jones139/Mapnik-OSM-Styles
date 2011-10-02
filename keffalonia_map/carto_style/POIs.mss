@@ -1,10 +1,10 @@
-#amenity-point {
-    point-allow-overlap:false;
-    text-name:"[name:en]";
+#osm_amenity_point {
+    point-allow-overlap:true;
+    text-name:"[name]";
     text-face-name:@serif;
-    text-size:4;
+    text-size:5;
     text-allow-overlap:true;
-    text-halo-radius:0.5;
+    text-halo-radius:1;
     text-halo-fill:rgba(255,255,255,0.75);
    [amenity="fuel"] 
    {
@@ -25,9 +25,9 @@
 
 #aeroway-point {
     point-allow-overlap:true;
-    text-name:"[name:en]";
+    text-name:"[name]";
     text-face-name:@serif;
-    text-size:8;
+    text-size:0;
     text-allow-overlap:true;
     text-halo-radius:1;
     text-halo-fill:rgba(255,255,255,0.75);
@@ -37,10 +37,11 @@
     }    
 }
 
+
 #historic-point
 {
     point-allow-overlap:true;
-    text-size:5;
+    text-size:0;
     text-allow-overlap:true;
     text-halo-radius:1;
     text-halo-fill:rgba(255,255,255,0.75);
@@ -59,12 +60,12 @@
     }    
 }
 
-#shop-point
+/*#shop-point
 {
     point-allow-overlap:true;
-    text-name:"[name:en]";
+    text-name:"[name]";
     text-face-name:@serif;
-    text-size:8;
+    text-size:0;
     text-allow-overlap:true;
     text-halo-radius:1;
     text-halo-fill:rgba(255,255,255,0.75);
@@ -78,3 +79,4 @@
     point-file:url("symbols/shopping_convenience.glow.32.png");
     }    
 }
+*/

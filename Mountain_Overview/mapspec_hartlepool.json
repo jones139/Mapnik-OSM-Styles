@@ -35,8 +35,8 @@
 	"hillshading"
 	],
 "processing":{
-	"downloadOsmData":false,
-	"downloadSrtmData":false,
+	"downloadOsmData":true,
+	"downloadSrtmData":true,
 	"createGridShapefile":true
 	}
 }
