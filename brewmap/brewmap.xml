@@ -1,1 +1,130 @@
-carto: Unexpected token ILLEGAL
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#00000000">
+
+<FontSet name="fontset-0">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
+<Style name="brewery_craft_poly" filter-mode="first">
+  <Rule>
+    <PointSymbolizer file="symbols/greendot.png" />
+    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+  </Rule>
+</Style>
+<Layer name="brewery_craft_poly"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>brewery_craft_poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[osm_gb]]></Parameter>
+       <Parameter name="user"><![CDATA[graham]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where craft is not null  ) as brewpoints]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="brewery_craft_point" filter-mode="first">
+  <Rule>
+    <PointSymbolizer file="symbols/greendot.png" />
+    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+  </Rule>
+</Style>
+<Layer name="brewery_craft_point"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>brewery_craft_point</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[osm_gb]]></Parameter>
+       <Parameter name="user"><![CDATA[graham]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (craft is not null) ) as brewpoints]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="brewery_industry_poly" filter-mode="first">
+  <Rule>
+    <PointSymbolizer file="symbols/bluedot.png" />
+    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+  </Rule>
+</Style>
+<Layer name="brewery_industry_poly"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>brewery_industry_poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[osm_gb]]></Parameter>
+       <Parameter name="user"><![CDATA[graham]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where industry is not null  ) as brewpoints]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="brewery_industry_point" filter-mode="first">
+  <Rule>
+    <PointSymbolizer file="symbols/bluedot.png" />
+    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+  </Rule>
+</Style>
+<Layer name="brewery_industry_point"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>brewery_industry_point</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[osm_gb]]></Parameter>
+       <Parameter name="user"><![CDATA[graham]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (industry is not null) ) as brewpoints]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="brewery_micro_poly" filter-mode="first">
+  <Rule>
+    <PointSymbolizer file="symbols/yellowdot.png" />
+    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+  </Rule>
+</Style>
+<Layer name="brewery_micro_poly"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>brewery_micro_poly</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[osm_gb]]></Parameter>
+       <Parameter name="user"><![CDATA[graham]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where microbrewery is not null  ) as brewpoints]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="brewery_micro_point" filter-mode="first">
+  <Rule>
+    <PointSymbolizer file="symbols/yellowdot.png" />
+    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+  </Rule>
+</Style>
+<Layer name="brewery_micro_point"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>brewery_micro_point</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[osm_gb]]></Parameter>
+       <Parameter name="user"><![CDATA[graham]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="port"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (microbrewery is not null) ) as brewpoints]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

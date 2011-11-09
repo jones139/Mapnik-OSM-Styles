@@ -2,6 +2,7 @@ Map {
   background-color:transparent;
 }
 
+
 @serif:"Times New Roman Regular","FreeSerif Medium","DejaVu Serif Book";
 
 .brewery_industry {
@@ -10,15 +11,15 @@ Map {
    text-face-name:@serif;
    text-name:"[name]";
    text-size:12;
-
+}
 .brewery_craft {
    point-file: url("symbols/greendot.png");
    text-placement:point;
    text-face-name:@serif;
    text-name:"[name]";
    text-size:12;
-
-.microbrewery {
+}
+.brewery_micro {
    point-file: url("symbols/yellowdot.png");
    text-placement:point;
    text-face-name:@serif;
