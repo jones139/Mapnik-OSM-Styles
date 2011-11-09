@@ -1,0 +1,4 @@
+      <Parameter name="type">postgis</Parameter>
+      <Parameter name="user">graham</Parameter>
+      <Parameter name="password">1234</Parameter>
+      <Parameter name="dbname">osm_gb</Parameter>

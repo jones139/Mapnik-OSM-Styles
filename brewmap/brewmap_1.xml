@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[
+ <!ENTITY db_settings SYSTEM "dbsettings.xml">
+ <!ENTITY % zoomlevels SYSTEM "zoomlevels.xml">
+	  %zoomlevels;
+
+ <!ENTITY pc "&#37;">
+ <!ENTITY symbolDir "/home/disk2/OSM/Maps/brewery/symbols">
+
+ <!ENTITY fontset "face_name = &quot;DejaVu Sans Bold&quot; 
+		   size = &quot;12&quot; 
+		   fill = &quot;#000000&quot;
+		   ">
+ <!ENTITY selectBrewery "
+		select way,name,landuse,building,operator as namemin from planet_osm_polygon where 
+                    (
+                       name ilike('&#37;brewery&#37;') and (building is not null or landuse = 'industrial')
+                    ) 
+		union
+		select way,name,landuse,building,operator as namemin from planet_osm_polygon where 
+                    (
+                       name ilike('&#37;brewery&#37;') and (building is not null or landuse = 'industrial')
+                    ) 
+		   ">
+
+]>
+
+<Map
+   background-color="transparent" 
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over"
+   
+>
+
+<FontSet name="times">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet> 
+<Style name="Brewery">
+<!-- ************** Breweries *************** -->
+    <Rule>
+      <TextSymbolizer 
+	 name="name"
+	 fontset-name="times"
+	 face_name="DejaVu Sans Book" 
+	 size="10" 
+	 fill="black" 
+	 halo_fill= "white" 
+	 halo_radius="2" 
+	 placement="point"
+         dy = "-10" 
+	 allow_overlap="false"/>
+
+      <PointSymbolizer 
+	 file="&symbolDir;/bluedot.png" 
+	 allow_overlap="false"
+	 />
+    </Rule>
+</Style>
+
+
+<Layer 
+   name="Breweries" 
+   status="on" 
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+  <StyleName>Brewery</StyleName>
+  <Datasource>
+      &db_settings;
+      <Parameter name="table">
+      	(&selectBrewery;) as points
+      </Parameter>
+  </Datasource>
+</Layer>
+
+
+</Map>

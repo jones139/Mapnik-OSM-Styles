@@ -1,0 +1,107 @@
+{
+"srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+
+"Stylesheet":[
+	"brewmap.mss"],
+
+
+"Layer":[
+ {"id":"brewery_craft_poly",
+  "name":"brewery_craft_poly",
+  "class":"brewery_craft",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"osm_gb",
+	       "user":"graham",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,name,operator from planet_osm_polygon where (craft='brewery')  ) as brewpoints" 
+	  }
+  },
+ {"id":"brewery_craft_point",
+  "name":"brewery_craft_point",
+  "class":"brewery_craft",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs",
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+	       "dbname":"osm_gb",
+	       "user":"graham",
+	       "password":"1234",
+	       "host":"localhost",
+	       "port":"",
+	       "table":"(select way,name,operator from planet_osm_point where (craft='brewery') ) as brewpoints" 
+	  }
+  },
+
+ {"id":"brewery_industry_point",
+  "name":"brewery_industry_point",
+  "class":"brewery_industry",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=$
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+               "dbname":"osm_gb",
+               "user":"graham",
+               "password":"1234",
+               "host":"localhost",
+		"port":"",
+	       "table":"(select way,name,operator from planet_osm_point where (industry='brewery' ) ) as brewpoints" 
+		}
+   },
+
+ {"id":"brewery_industry_poly",
+  "name":"brewery_industry_poly",
+  "class":"brewery_industry",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=$
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+               "dbname":"osm_gb",
+               "user":"graham",
+               "password":"1234",
+               "host":"localhost",
+		"port":"",
+	       "table":"(select way,name,operator from planet_osm_polygon where (industry='brewery')  ) as brewpoints" 
+		}
+   },
+
+
+ {"id":"microbrewery_point",
+  "name":"microbrewery_point",
+  "class":"microbrewery",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=$
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+               "dbname":"osm_gb",
+               "user":"graham",
+               "password":"1234",
+               "host":"localhost",
+		"port":"",
+	       "table":"(select way,name,operator from planet_osm_point where (microbrewery is not null ) ) as brewpoints" 
+		}
+   },
+
+ {"id":"microbrewery_poly",
+  "name":"microbrewery_poly",
+  "class":"microbrewery",
+  "srs":"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=$
+  "geometry":"point",
+  "Datasource": {
+               "type":"postgis",
+               "dbname":"osm_gb",
+               "user":"graham",
+               "password":"1234",
+               "host":"localhost",
+		"port":"",
+	       "table":"(select way,name,operator from planet_osm_polygon where (microbrewery is not null ) ) as brewpoints" 
+		}
+   }
+]
+
+
+}
