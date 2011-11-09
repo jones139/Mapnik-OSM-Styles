@@ -10,7 +10,7 @@
 <Style name="brewery_craft_poly" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/greendot.png" />
-    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+    <TextSymbolizer dy="12" placement="point" fontset-name="fontset-0" name="[name]" size="12" />
   </Rule>
 </Style>
 <Layer name="brewery_craft_poly"
@@ -30,7 +30,7 @@
 <Style name="brewery_craft_point" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/greendot.png" />
-    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+    <TextSymbolizer dy="12" placement="point" fontset-name="fontset-0" name="[name]" size="12" />
   </Rule>
 </Style>
 <Layer name="brewery_craft_point"
@@ -50,7 +50,7 @@
 <Style name="brewery_industry_poly" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/bluedot.png" />
-    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+    <TextSymbolizer dy="12" placement="point" fontset-name="fontset-0" name="[name]" size="12" />
   </Rule>
 </Style>
 <Layer name="brewery_industry_poly"
@@ -70,7 +70,7 @@
 <Style name="brewery_industry_point" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/bluedot.png" />
-    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+    <TextSymbolizer dy="12" placement="point" fontset-name="fontset-0" name="[name]" size="12" />
   </Rule>
 </Style>
 <Layer name="brewery_industry_point"
@@ -90,7 +90,7 @@
 <Style name="brewery_micro_poly" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/yellowdot.png" />
-    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+    <TextSymbolizer dy="12" placement="point" fontset-name="fontset-0" name="[name]" size="12" />
   </Rule>
 </Style>
 <Layer name="brewery_micro_poly"
@@ -110,7 +110,7 @@
 <Style name="brewery_micro_point" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/yellowdot.png" />
-    <TextSymbolizer placement="point" fontset-name="fontset-0" name="[name]" size="12" />
+    <TextSymbolizer dy="12" placement="point" fontset-name="fontset-0" name="[name]" size="12" />
   </Rule>
 </Style>
 <Layer name="brewery_micro_point"

@@ -7,6 +7,7 @@ Map {
 
 .brewery_industry {
    point-file: url("symbols/bluedot.png");
+   text-dy:12;
    text-placement:point;
    text-face-name:@serif;
    text-name:"[name]";
@@ -14,6 +15,7 @@ Map {
 }
 .brewery_craft {
    point-file: url("symbols/greendot.png");
+   text-dy:12;
    text-placement:point;
    text-face-name:@serif;
    text-name:"[name]";
@@ -21,6 +23,7 @@ Map {
 }
 .brewery_micro {
    point-file: url("symbols/yellowdot.png");
+   text-dy:12;
    text-placement:point;
    text-face-name:@serif;
    text-name:"[name]";
