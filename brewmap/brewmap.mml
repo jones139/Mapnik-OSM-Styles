@@ -18,7 +18,7 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,name,operator from planet_osm_polygon where craft is not null  ) as brewpoints" 
+	       "table":"(select way,name,operator from planet_osm_polygon where craft = 'brewery'  ) as brewpoints" 
 	  }
   },
 
@@ -34,7 +34,7 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,name,operator from planet_osm_point where (craft is not null) ) as brewpoints" 
+	       "table":"(select way,name,operator from planet_osm_point where (craft = 'brewery') ) as brewpoints" 
 	  }
   },
 
@@ -50,7 +50,7 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,name,operator from planet_osm_polygon where industry is not null  ) as brewpoints" 
+	       "table":"(select way,name,operator from planet_osm_polygon where industry = 'brewery'  ) as brewpoints" 
 	  }
   },
 
@@ -66,7 +66,7 @@
 	       "password":"1234",
 	       "host":"localhost",
 	       "port":"",
-	       "table":"(select way,name,operator from planet_osm_point where (industry is not null) ) as brewpoints" 
+	       "table":"(select way,name,operator from planet_osm_point where (industry = 'brewery') ) as brewpoints" 
 	  }
   },
 

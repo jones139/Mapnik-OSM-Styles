@@ -23,7 +23,7 @@
        <Parameter name="password"><![CDATA[1234]]></Parameter>
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where craft is not null  ) as brewpoints]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where craft = 'brewery'  ) as brewpoints]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43,7 +43,7 @@
        <Parameter name="password"><![CDATA[1234]]></Parameter>
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (craft is not null) ) as brewpoints]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (craft = 'brewery') ) as brewpoints]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -63,7 +63,7 @@
        <Parameter name="password"><![CDATA[1234]]></Parameter>
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where industry is not null  ) as brewpoints]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_polygon where industry = 'brewery'  ) as brewpoints]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -83,7 +83,7 @@
        <Parameter name="password"><![CDATA[1234]]></Parameter>
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (industry is not null) ) as brewpoints]]></Parameter>
+       <Parameter name="table"><![CDATA[(select way,name,operator from planet_osm_point where (industry = 'brewery') ) as brewpoints]]></Parameter>
     </Datasource>
   </Layer>
 
