@@ -2,10 +2,15 @@
 <!DOCTYPE Map[]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#00000000">
 
-
+<FontSet name="fontset-0">
+  <Font face-name="Times New Roman Regular"/>
+  <Font face-name="FreeSerif Medium"/>
+  <Font face-name="DejaVu Serif Book"/>
+</FontSet>
 <Style name="brewery_craft_poly" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/greendot.png" />
+    <TextSymbolizer dy="6" placement="point" fontset-name="fontset-0" name="[name]" size="10" halo-radius="0.5" wrap-width="15" />
   </Rule>
 </Style>
 <Layer name="brewery_craft_poly"
@@ -25,6 +30,7 @@
 <Style name="brewery_craft_point" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/greendot.png" />
+    <TextSymbolizer dy="6" placement="point" fontset-name="fontset-0" name="[name]" size="10" halo-radius="0.5" wrap-width="15" />
   </Rule>
 </Style>
 <Layer name="brewery_craft_point"
@@ -44,6 +50,7 @@
 <Style name="brewery_industry_poly" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/bluedot.png" />
+    <TextSymbolizer dy="6" placement="point" fontset-name="fontset-0" name="[name]" size="10" halo-radius="0.5" wrap-width="15" />
   </Rule>
 </Style>
 <Layer name="brewery_industry_poly"
@@ -63,6 +70,7 @@
 <Style name="brewery_industry_point" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/bluedot.png" />
+    <TextSymbolizer dy="6" placement="point" fontset-name="fontset-0" name="[name]" size="10" halo-radius="0.5" wrap-width="15" />
   </Rule>
 </Style>
 <Layer name="brewery_industry_point"
@@ -82,6 +90,7 @@
 <Style name="brewery_micro_poly" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/yellowdot.png" />
+    <TextSymbolizer dy="6" placement="point" fontset-name="fontset-0" name="[name]" size="10" halo-radius="0.5" wrap-width="15" />
   </Rule>
 </Style>
 <Layer name="brewery_micro_poly"
@@ -101,6 +110,7 @@
 <Style name="brewery_micro_point" filter-mode="first">
   <Rule>
     <PointSymbolizer file="symbols/yellowdot.png" />
+    <TextSymbolizer dy="6" placement="point" fontset-name="fontset-0" name="[name]" size="10" halo-radius="0.5" wrap-width="15" />
   </Rule>
 </Style>
 <Layer name="brewery_micro_point"
